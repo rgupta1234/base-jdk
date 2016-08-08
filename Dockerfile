@@ -8,7 +8,7 @@ USER root
 RUN yum -y install java-1.7.0-openjdk-devel && yum clean all
 
 # Switch back to jboss user
-USER jboss
-
+#USER jboss
+USER 1000
 # Set the JAVA_HOME variable to make it clear where Java is located
 ENV JAVA_HOME /usr/lib/jvm/java
